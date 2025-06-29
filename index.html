@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio - Franck Armel Exaucé AKPODE</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <nav>
+  <nav class="menu-advanced">
     <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+      <li><a href="#apropos"><i class="fas fa-user"></i> À propos</a></li>
+      <li><a href="#competences"><i class="fas fa-cogs"></i> Compétences</a></li>
+      <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
 
   <section id="accueil" class="section">
-    <div class="profil">
-      <img src="images\IMG_1298.JPG" alt="Photo de profil" class="photo-profil">
+    <div class="profil flex flex-center-v gap-20">
+      <img src="images/IMG_1298.JPG" alt="Photo de profil" class="photo-profil" />
       <div class="intro-block">
         <h1 class="name">Franck Armel Exaucé AKPODE</h1>
         <div class="title-role">Développeuse Web et Logiciels</div>
-        <p class="brief-desc">Diplômée d'une Licence Professionnelle en Informatique, je suis passionnée par les technologies du web, le développement logiciel et la conception d'interfaces ergonomiques. Mon parcours m'a permis de réaliser plusieurs projets académiques et professionnels axés sur la création de solutions digitales utiles et adaptées aux besoins des utilisateurs.</p>
-        <div class="stats">
+        <p class="brief-desc">
+          Diplômée d'une Licence Professionnelle en Informatique, je suis passionnée par les technologies du web, le développement logiciel et la conception d'interfaces ergonomiques. Mon parcours m'a permis de réaliser plusieurs projets académiques et professionnels axés sur la création de solutions digitales utiles et adaptées aux besoins des utilisateurs.
+        </p>
+        <div class="stats flex gap-15">
           <div class="stat-box"><span>20+</span> Projets réalisés</div>
           <div class="stat-box"><span>30+</span> Stages et expériences professionnelles</div>
           <div class="stat-box"><span>100%</span> Engagement</div>
         </div>
-        <div class="social-icons">
-          <span>📧</span>
-          <span>🌐</span>
-          <span>🔗</span>
+        <div class="social-icons flex gap-10">
+          <a href="mailto:franckarmelakpode@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" aria-label="Site personnel"><i class="fas fa-globe"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -40,19 +43,23 @@
 
   <section id="apropos" class="section">
     <h2>À propos de moi</h2>
-    <div class="about-content">
-      <img src="images\IMG_1298.JPG" alt="bureau informatique" class="about-image">
+    <div class="about-content flex gap-20">
+      <img src="images/IMG_1298.JPG" alt="bureau informatique" class="about-image" />
       <div class="about-description">
         <h3>Mon parcours</h3>
-        <p>Passionnée par le monde du numérique, j'ai choisi d'intégrer une Licence Professionnelle en Informatique afin d'acquérir des compétences concrètes en développement web, programmation et base de données. Ce parcours m'a permis de comprendre les enjeux techniques des projets informatiques et d'y apporter des solutions efficaces et adaptées.</p>
-        <p>Tout au long de ma formation, j'ai réalisé des stages dans diverses structures, participant à la conception d'applications internes, au déploiement de sites vitrines et à l'amélioration d'interfaces utilisateurs. Ces expériences m'ont permis de développer un véritable sens de l'organisation, de la rigueur et de l'autonomie.</p>
+        <p>
+          Passionnée par le monde du numérique, j'ai choisi d'intégrer une Licence Professionnelle en Informatique afin d'acquérir des compétences concrètes en développement web, programmation et base de données. Ce parcours m'a permis de comprendre les enjeux techniques des projets informatiques et d'y apporter des solutions efficaces et adaptées.
+        </p>
+        <p>
+          Tout au long de ma formation, j'ai réalisé des stages dans diverses structures, participant à la conception d'applications internes, au déploiement de sites vitrines et à l'amélioration d'interfaces utilisateurs. Ces expériences m'ont permis de développer un véritable sens de l'organisation, de la rigueur et de l'autonomie.
+        </p>
         <div class="bio-stats">
-          <p>🎂 Âge : 20 ans</p>
-          <p>📍 Localisation : Bénin</p>
-          <p>🎓 Diplôme : Licence Professionnelle en Informatique</p>
-          <p>🎓 Stage principal : Conception d'une application de gestion du personnel</p>
-          <p>💼 Expériences : Stages en entreprise, projets académiques, développement freelance</p>
-          <p>🎓 Certifications : Git & GitHub, Programmation Python, Web responsive</p>
+          <p><i class="fas fa-birthday-cake"></i> Âge : 20 ans</p>
+          <p><i class="fas fa-map-marker-alt"></i> Localisation : Bénin</p>
+          <p><i class="fas fa-graduation-cap"></i> Diplôme : Licence Professionnelle en Informatique</p>
+          <p><i class="fas fa-briefcase"></i> Stage principal : Conception d'une application de gestion du personnel</p>
+          <p><i class="fas fa-users"></i> Expériences : Stages en entreprise, projets académiques, développement freelance</p>
+          <p><i class="fas fa-certificate"></i> Certifications : Git & GitHub, Programmation Python, Web responsive</p>
         </div>
       </div>
     </div>
@@ -60,117 +67,150 @@
 
   <section id="competences" class="section">
     <h2>Compétences</h2>
-    <div class="competence-group">
+    <div class="competence-group flex wrap gap-20">
       <div class="competence-box">
-        <h4>🖥️ Front-End</h4>
-        <div class="skill-bar"><div class="skill-label">HTML5 <span>90%</span></div><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">CSS3 <span>85%</span></div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">JavaScript <span>60%</span></div><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+        <h4><i class="fas fa-code"></i> Front-End</h4>
+        <div class="skill-bar">
+          <div class="skill-label">HTML5</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 90%;">90%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">CSS3</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 85%;">85%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">JavaScript</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 60%;">60%</div></div>
+        </div>
       </div>
       <div class="competence-box">
-        <h4>🖥️Back-End</h4>
-        <div class="skill-bar"><div class="skill-label">PHP <span>50%</span></div><div class="bar"><div class="bar-fill" style="width:50%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">MySQL <span>60%</span></div><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">Python <span>30%</span></div><div class="bar"><div class="bar-fill" style="width:30%"></div></div></div>
+        <h4><i class="fas fa-server"></i> Back-End</h4>
+        <div class="skill-bar">
+          <div class="skill-label">PHP</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 50%;">50%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">MySQL</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 60%;">60%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">Python</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 30%;">30%</div></div>
+        </div>
       </div>
       <div class="competence-box">
-        <h4>🔧 Outils</h4>
-        <div class="skill-bar"><div class="skill-label">Git & GitHub <span>70%</span></div><div class="bar"><div class="bar-fill" style="width:70%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">VS Code <span>90%</span></div><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
-        <div class="skill-bar"><div class="skill-label">Figma <span>50%</span></div><div class="bar"><div class="bar-fill" style="width:50%"></div></div></div>
+        <h4><i class="fas fa-tools"></i> Outils</h4>
+        <div class="skill-bar">
+          <div class="skill-label">Git & GitHub</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 70%;">70%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">VS Code</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 90%;">90%</div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-label">Figma</div>
+          <div class="bar"><div class="bar-fill" style="--target-width: 50%;">50%</div></div>
+        </div>
       </div>
     </div>
 
     <h3 style="text-align:center; margin-top: 50px;">Compétences transversales</h3>
-    <div class="competence-group">
+    <div class="competence-group flex wrap gap-20">
       <div class="competence-box">
-        <h4>💬 Communication</h4>
+        <h4><i class="fas fa-comments"></i> Communication</h4>
         <p>Capacité à transmettre des idées techniques de façon claire et à interagir efficacement avec différents interlocuteurs.</p>
       </div>
       <div class="competence-box">
-        <h4>🤝 Travail en équipe</h4>
+        <h4><i class="fas fa-handshake"></i> Travail en équipe</h4>
         <p>Bonne expérience du travail collaboratif dans des environnements dynamiques et multiculturels.</p>
       </div>
       <div class="competence-box">
-        <h4>🧠 Résolution de problèmes</h4>
+        <h4><i class="fas fa-brain"></i> Résolution de problèmes</h4>
         <p>Capacité à analyser rapidement une situation et à proposer des solutions pertinentes et efficaces.</p>
       </div>
     </div>
   </section>
 
   <section id="portfolio" class="section">
-    <h2>Portfolio</h2>
-    <h3>Projets en vedette</h3>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="images\R.jpg" alt="Projet 1">
-        <p>Site personnel mettant en valeur mes compétences, mon parcours et mes réalisations. Conçu avec HTML, CSS et responsive design.</p>
-        <div class="tags">
-          <span class="tag">Portfolio</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
+    <h2>Mes projets</h2>
+    <div class="competence-group flex wrap gap-20">
+      <div class="competence-box">
+        <h4><i class="fas fa-star"></i> Projets en vedette</h4>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="images/R.jpg" alt="Projet 1" />
+            <p>Site personnel mettant en valeur mes compétences, mon parcours et mes réalisations. Conçu avec HTML, CSS et responsive design.</p>
+            <div class="tags">
+              <span class="tag">Portfolio</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/IMG_1298.JPG" alt="Projet 2" />
+            <p>Tableau de bord RH interactif présentant des indicateurs clés, conçu avec HTML/CSS pour une visualisation claire.</p>
+            <div class="tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">RH</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="portfolio-item">
-        <img src="images\IMG_1298.JPG" alt="Projet 2">
-        <p>Tableau de bord RH interactif présentant des indicateurs clés, conçu avec HTML/CSS pour une visualisation claire.</p>
-        <div class="tags">
-          <span class="tag">Dashboard</span>
-          <span class="tag">RH</span>
-          <span class="tag">HTML/CSS</span>
-        </div>
-      </div>
-    </div>
-    <h3>Autres projets</h3>
-    <div class="portfolio-grid">
-      <div class="portfolio-item">
-        <img src="images\IMG_1298.JPG" alt="Projet A1">
-        <p>Site vitrine pour la publication d'offres d'emploi avec formulaire de candidature en ligne.</p>
-        <div class="tags">
-          <span class="tag">Emploi</span>
-          <span class="tag">Formulaire</span>
-          <span class="tag">HTML</span>
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <img src="images\R.jpg" alt="Projet A2">
-        <p>Application web pour faciliter l'onboarding des nouveaux collaborateurs avec documents et contacts utiles.</p>
-        <div class="tags">
-          <span class="tag">Onboarding</span>
-          <span class="tag">RH</span>
-          <span class="tag">Web</span>
+
+      <div class="competence-box">
+        <h4><i class="fas fa-fire"></i> Projets tendances</h4>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="images/IMG_1298.JPG" alt="Projet A1" />
+            <p>Site vitrine pour la publication d'offres d'emploi avec formulaire de candidature en ligne.</p>
+            <div class="tags">
+              <span class="tag">Emploi</span>
+              <span class="tag">Formulaire</span>
+              <span class="tag">HTML</span>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/IMG_1298.JPG" alt="Projet A2" />
+            <p>Application mobile prototype avec interactions simples et navigation fluide.</p>
+            <div class="tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">Prototype</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contactez-moi</h2>
-    <div class="contact-flex">
-      <div class="coordonnees">
-        <p>📧 franckarmelakpode@gmail.com</p>
-        <p>📱 +229 0154961047</p>
-      </div>
-      <form action="#" method="post">
-        <input type="text" name="nom" placeholder="Votre nom" required>
-        <input type="email" name="email" placeholder="Votre email" required>
-        <textarea name="message" placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
+  <section id="contact" class="section flex gap-30">
+    <div class="adresse">
+      <h3><i class="fas fa-map-marker-alt"></i> Mes adresses</h3>
+      <p><strong>Résidence :</strong> Cotonou, Bénin</p>
+      <p><strong>Adresse :</strong> Rue des Djadjo; Quartier Calavi</p>
+      <p><strong>Email :</strong> franckarmelakpode@gmail.com</p>
+      <p><strong>Téléphone :</strong> +229 0154961047</p>
     </div>
+
+    <form action="#" method="post" class="contact-form">
+      <h3><i class="fas fa-paper-plane"></i> Me contacter</h3>
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn-primary">Envoyer</button>
+    </form>
   </section>
 
   <footer>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <p style="text-align:center; margin-top: 10px;">&copy; 2025 Franck Armel Exaucé AKPODE| Portfolio personnel</p>
+    <p>© 2025 Franck Armel Exaucé AKPODE - Tous droits réservés</p>
   </footer>
 </body>
 </html>
