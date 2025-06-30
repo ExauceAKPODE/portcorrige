@@ -127,7 +127,7 @@ body {
   color: #444;
 }
 
-/* Statistiques */
+
 .stats {
   margin-bottom: 25px;
 }
@@ -152,7 +152,7 @@ body {
   background-color: #2980b9;
 }
 
-/* Icônes réseaux sociaux */
+
 .social-icons a {
   color: #2980b9;
   font-size: 1.4rem;
@@ -498,3 +498,61 @@ footer {
       from { width: 0; }
       to { width: var(--target-width); }
     }
+    
+.menu-advanced {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.menu-advanced .menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-advanced ul.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-advanced ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-advanced .menu-icon {
+    display: block;
+  }
+
+  .menu-advanced ul.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2c3e50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + ul.nav-links {
+    display: flex;
+  }
+}
